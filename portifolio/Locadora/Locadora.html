@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora DF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <img style="width: 4%;" src="img/rolo-de-filme.png" alt="">
+            <a class="navbar-brand" href="#topo">Locadora DF</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#tabFilmes">Filmes Disponíveis</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropGeneros" data-bs-toggle="dropdown" role="button"
+                            href="#drop">Filmes por
+                            categoria</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#gAcao">Ação</a></li>
+                            <li><a class="dropdown-item" href="#gAnimacao">Animação</a></li>
+                            <li><a class="dropdown-item" href="#gComedia">Comédia</a></li>
+                            <li><a class="dropdown-item" href="#gDrama">Drama</a></li>
+                            <li><a class="dropdown-item" href="#gFantasia">Fantasia</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="display-1 text-center mb-5">Locadora DF</h1>
+
+    <div class="container">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Diretor</th>
+                    <th scope="col">Lançamento</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Ator/Atriz Principal</th>
+                    <th scope="col">Nota IMDb</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Ação -->
+                <tr>
+                    <th class="text-left table-primary" colspan="7" id="gAcao">Ação</th>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Príncipe da Pérsia</td>
+                    <td>Mike Newell</td>
+                    <td>3 de junho de 2010</td>
+                    <td>Ação</td>
+                    <td>Jake Gyllenhaal</td>
+                    <td>6,6/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kingsman: Serviço Secreto</td>
+                    <td>Matthew Vaughn</td>
+                    <td>6 de março de 2015</td>
+                    <td>Ação</td>
+                    <td>Taron Egerton</td>
+                    <td>7,7/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Anjos da Lei</td>
+                    <td>Phil Lord, Chris Miller</td>
+                    <td>4 de maio de 2012</td>
+                    <td>Ação</td>
+                    <td>Channing Tatum</td>
+                    <td>7,2/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Batman</td>
+                    <td>Matt Reeves</td>
+                    <td>3 de março de 2022</td>
+                    <td>Ação</td>
+                    <td>Robert Pattinson</td>
+                    <td>7,9/10</td>
+                </tr>
+
+                <!-- Animação -->
+                <tr>
+                    <th class="text-left table-primary" colspan="7" id="gAnimacao">Animação</th>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Shrek</td>
+                    <td>Andrew Adamson, Vicky Jenson</td>
+                    <td>22 de junho de 2001</td>
+                    <td>Animação</td>
+                    <td>Mike Myers (voz)</td>
+                    <td>7,9/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Procurando Nemo</td>
+                    <td>Andrew Stanton</td>
+                    <td>4 de julho de 2003</td>
+                    <td>Animação</td>
+                    <td>Alexander Gould (voz)</td>
+                    <td>8,2/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Kung Fu Panda</td>
+                    <td>Mark Osborne, John Stevenson</td>
+                    <td>4 de julho de 2008</td>
+                    <td>Animação</td>
+                    <td>Jack Black (voz)</td>
+                    <td>7,6/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>A Era do Gelo</td>
+                    <td>Chris Wedge</td>
+                    <td>22 de março de 2002</td>
+                    <td>Animação</td>
+                    <td>Ray Romano (voz)</td>
+                    <td>7,5/10</td>
+                </tr>
+
+                <!-- Comédia -->
+                <tr>
+                    <th class="text-left table-primary" colspan="7" id="gComedia">Comédia</th>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Super-Herói: O Filme</td>
+                    <td>Craig Mazin</td>
+                    <td>28 de março de 2008</td>
+                    <td>Comédia</td>
+                    <td>Drake Bell</td>
+                    <td>4,6/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Todo Mundo em Pânico</td>
+                    <td>Keenen Ivory Wayans</td>
+                    <td>22 de setembro de 2000</td>
+                    <td>Comédia</td>
+                    <td>Anna Faris</td>
+                    <td>6,2/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>As Branquelas</td>
+                    <td>Keenen Ivory Wayans</td>
+                    <td>27 de agosto de 2004</td>
+                    <td>Comédia</td>
+                    <td>Marlon e Shawn Wayans</td>
+                    <td>5,7/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Gente Grande</td>
+                    <td>Dennis Dugan</td>
+                    <td>24 de setembro de 2010</td>
+                    <td>Comédia</td>
+                    <td>Adam Sandler</td>
+                    <td>5,9/10</td>
+                </tr>
+
+                <!-- Drama -->
+                <tr>
+                    <th class="text-left table-primary" colspan="7" id="gDrama">Drama</th>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Um Sonho de Liberdade</td>
+                    <td>Frank Darabont</td>
+                    <td>17 de março de 1995</td>
+                    <td>Drama</td>
+                    <td>Morgan Freeman</td>
+                    <td>9,3/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>O Poderoso Chefão</td>
+                    <td>Francis Ford Coppola</td>
+                    <td>7 de julho de 1972</td>
+                    <td>Drama</td>
+                    <td>Al Pacino</td>
+                    <td>9,2/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>A Lista de Schindler</td>
+                    <td>Steven Spielberg</td>
+                    <td>31 de dezembro de 1993</td>
+                    <td>Drama</td>
+                    <td>Liam Neeson</td>
+                    <td>9,0/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Intocáveis</td>
+                    <td>Eric Toledano, Olivier Nakache</td>
+                    <td>31 de agosto de 2012</td>
+                    <td>Drama</td>
+                    <td>Omar Sy</td>
+                    <td>8,5/10</td>
+                </tr>
+                <!-- Fantasia -->
+                <tr>
+                    <th class="text-left table-primary" colspan="7" id="gFantasia">Fantasia</th>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>Deadpool</td>
+                    <td>Tim Miller</td>
+                    <td>11 de fevereiro de 2016</td>
+                    <td>Fantasia</td>
+                    <td>Ryan Reynolds</td>
+                    <td>8,0/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>Guardiões da Galáxia Vol. 2</td>
+                    <td>James Gunn</td>
+                    <td>27 de abril de 2017</td>
+                    <td>Fantasia</td>
+                    <td>Chris Pratt</td>
+                    <td>7,6/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">19</th>
+                    <td>Doutor Estranho</td>
+                    <td>Scott Derrickson</td>
+                    <td>2 de novembro de 2016</td>
+                    <td>Fantasia</td>
+                    <td>Benedict Cumberbatch</td>
+                    <td>7,5/10</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>Adão Negro</td>
+                    <td>Jaume Collet-Serra</td>
+                    <td>20 de outubro de 2022</td>
+                    <td>Fantasia</td>
+                    <td>Dwayne Johnson</td>
+                    <td>7,1/10</td>
+                </tr>
+                <!-- 21 Filme adicionado -->
+                <tr id="inserirTabela">
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="m-5">
+        <hr class="border-primary border-3 opacity-75">
+    </div>
+
+    <h2 class="text-center mb-5" id="cadFilmes">Cadastro de Filmes</h2>
+
+    <div class="container mb-5">
+        <form name="cadastro" onsubmit="event.preventDefault()">
+            <!-- Linha código e data lançamento -->
+            <div class="row">
+                <!-- Código -->
+                <div class="mb-3 col">
+                    <label for="codFilme" class="form-label">Código: </label>
+                    <input type="text" name="codigo" id="codFilme" class="form-control" placeholder="00" required>
+                </div>
+                <!-- Data lançamento -->
+                <div class="mb-3 col">
+                    <label for="anoFilme" class="form-label">Ano: </label>
+                    <input type="date" name="data" id="anoFilme" class="form-control" required>
+                </div>
+            </div>
+            <!-- Linha título e diretor -->
+            <div class="row">
+                <!-- Título -->
+                <div class="mb-3 col">
+                    <label for="titFilme" class="form-label">Título: </label>
+                    <input type="text" name="titulo" id="titFilme" class="form-control" required>
+                </div>
+                <!-- Diretor -->
+                <div class="mb-3 col">
+                    <label for="dirFilme" class="form-label">Diretor: </label>
+                    <input type="text" name="diretor" id="dirFilme" class="form-control" required>
+                </div>
+            </div>
+            <!-- Linha ator/atriz e nota-->
+            <div class="row">
+                <!-- Ator/Atriz -->
+                <div class="mb-3 col">
+                    <label for="atrFilme" class="form-label">Ator/Atriz principal: </label>
+                    <input type="text" name="ator" id="atrFilme" class="form-control" required>
+                </div>
+                <!-- Nota -->
+                <div class="mb-3 col">
+                    <label for="notaFilme" class="form-label">Nota IMDb: </label>
+                    <input type="text" name="nota" id="notaFilme" class="form-control" placeholder="X,X/10" required>
+                </div>
+            </div>
+            <!-- Linha gêneros -->
+            <div class="row">
+                <div class="mb-3 col form-check">
+                    <input type="radio" name="radio" id="radGenAcao" class="form-check-input" value="Ação" required>
+                    <label for="radGenAcao" class="form-label">Ação</label>
+                </div>
+                <div class="mb-3 col form-check">
+                    <input type="radio" name="radio" id="radGenAnimacao" class="form-check-input" value="Animação" required>
+                    <label for="radGenAnimacao" class="form-label">Animação</label>
+                </div>
+                <div class="mb-3 col form-check">
+                    <input type="radio" name="radio" id="radGenComedia" class="form-check-input" value="Comédia" required>
+                    <label for="radGenComedia" class="form-label">Comédia</label>
+                </div>
+                <div class="mb-3 col form-check">
+                    <input type="radio" name="radio" id="radGenDrama" class="form-check-input" value="Drama" required>
+                    <label for="radGenDrama" class="form-label">Drama</label>
+                </div>
+                <div class="mb-3 col form-check">
+                    <input type="radio" name="radio" id="radGenFantasia" class="form-check-input" value="Fantasia" required>
+                    <label for="radGenFantasia" class="form-label">Fantasia</label>
+                </div>
+            </div>
+            <!-- Botão enviar -->
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3" onclick="insere()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <a href="#" style="position: fixed; right: 10px; bottom:10px;">
+        <button type="button" class="btn btn-secondary">Topo</button>
+    </a>
+</body>
+
+</html>
